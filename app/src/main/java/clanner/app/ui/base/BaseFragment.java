@@ -16,6 +16,8 @@ import me.yokeyword.swipebackfragment.SwipeBackFragment;
 
 /**
  * Created by Clanner on 2016/6/23.
+ * Fragment的基类 支持右滑退出
+ * 若不支持则在initView中调用getSwipeBackLayout().setEnableGesture(false);
  */
 public abstract class BaseFragment extends SwipeBackFragment{
     private ActionBar actionBar;

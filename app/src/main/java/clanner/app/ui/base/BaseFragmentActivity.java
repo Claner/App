@@ -13,6 +13,8 @@ import me.yokeyword.swipebackfragment.SwipeBackActivity;
 
 /**
  * Created by Clanner on 2016/6/23.
+ * 单Activity多Fragment的基类 支持右滑退出
+ * 继承该基类的Activity只需实现getFirstFragment方法为该Activity添加第一个Fragment即可
  */
 public abstract class BaseFragmentActivity extends SwipeBackActivity {
     protected abstract BaseFragment getFirstFragment();
