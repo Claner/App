@@ -1,5 +1,6 @@
 package clanner.app.ui.base;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
@@ -80,5 +81,16 @@ public abstract class BaseActivity extends SwipeBackActivity{
         } catch (Exception e) {
             Toast.makeText(this, content, Toast.LENGTH_LONG).show();
         }
+    }
+
+    protected void ChangeActivity(Class<?> cls){
+        Intent intent = new Intent(this,cls);
+        startActivity(intent);
+    }
+
+    protected void ChangeActivity(Class<?> cls,boolean isFinish){
+        Intent intent = new Intent(this,cls);
+        startActivity(intent);
+        if (isFinish) this.finish();
     }
 }
