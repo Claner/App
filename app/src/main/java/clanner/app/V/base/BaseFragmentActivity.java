@@ -1,4 +1,4 @@
-package clanner.app.ui.base;
+package clanner.app.V.base;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -8,7 +8,7 @@ import android.view.KeyEvent;
 import android.widget.Toast;
 
 import butterknife.ButterKnife;
-import clanner.app.ui.R;
+import clanner.app.V.R;
 import me.yokeyword.swipebackfragment.SwipeBackActivity;
 
 /**

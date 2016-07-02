@@ -1,4 +1,4 @@
-package clanner.app.ui.base;
+package clanner.app.V.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import butterknife.ButterKnife;
-import clanner.app.ui.R;
+import clanner.app.V.R;
 import me.yokeyword.swipebackfragment.SwipeBackFragment;
 
 /**
@@ -42,43 +42,52 @@ public abstract class BaseFragment extends SwipeBackFragment{
      * @param fragment
      * @param activity
      */
-    protected void addFragment(BaseFragment fragment, BaseFragmentActivity activity) {
+    protected void addFragment(BaseFragment fragment, clanner.app.V.base.BaseFragmentActivity activity) {
         activity.addFragment(fragment);
     }
 
     /**
      * 移除Fragment
      */
-    protected void removeFragment(BaseFragmentActivity activity) {
+    protected void removeFragment(clanner.app.V.base.BaseFragmentActivity activity) {
         activity.removeFragment();
     }
 
     /**
      * 初始化ActionBar
      *
+     * 若title要居中显示，则传入""
      * @param toolbar
      * @param title
      */
-    protected void initActionBar(Toolbar toolbar, String title) {
+    protected void initActionBar(Toolbar toolbar, String title, final boolean isFinish) {
         toolbar.setNavigationIcon(R.mipmap.ic_back_white);
         toolbar.setTitle(title);
         toolbar.setNavigationIcon(R.mipmap.ic_back_white);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().onBackPressed();
+                if (isFinish) {
+                    getActivity().finish();
+                }else {
+                    getActivity().onBackPressed();
+                }
             }
         });
     }
 
-    protected void initActionBar( Toolbar toolbar, int title) {
+    protected void initActionBar( Toolbar toolbar, int title,final boolean isFinish) {
         toolbar.setNavigationIcon(R.mipmap.ic_back_white);
         toolbar.setTitle(title);
         toolbar.setNavigationIcon(R.mipmap.ic_back_white);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().onBackPressed();
+                if (isFinish) {
+                    getActivity().finish();
+                }else {
+                    getActivity().onBackPressed();
+                }
             }
         });
     }

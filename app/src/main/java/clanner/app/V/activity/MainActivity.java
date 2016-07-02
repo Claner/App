@@ -1,11 +1,12 @@
-package clanner.app.ui.activity;
+package clanner.app.V.activity;
 
 import android.os.Bundle;
 
-import clanner.app.ui.R;
-import clanner.app.ui.base.BaseActivity;
+import clanner.app.V.R;
+import clanner.app.V.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
+
     @Override
     protected int setContentViewId() {
         return R.layout.activity_main;
@@ -13,6 +14,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-
+        getSwipeBackLayout().setEnableGesture(false);
     }
 }

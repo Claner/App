@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "clanner.app.ui"
+        applicationId "clanner.app.V.ui"
         minSdkVersion 19
         targetSdkVersion 23
         versionCode 1

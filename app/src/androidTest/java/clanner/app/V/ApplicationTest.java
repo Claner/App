@@ -1,4 +1,4 @@
-package clanner.app.ui;
+package clanner.app;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

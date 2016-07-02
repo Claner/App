@@ -1,4 +1,4 @@
-package clanner.app.ui;
+package clanner.app.V;
 
 import org.junit.Test;
 

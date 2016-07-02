@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="btn_login_after">#6c6c6c</color>
+    <color name="btn_login_before">#a0a0a0</color>
+    <color name="green">#279403</color>
+    <color name="selected">#6a6a6a</color>
+    <!--0xFF45C01A-->
+    <color name="bottom_color">#6f6f6f</color>
+    <color name="toolbar_color">#848484</color>
 </resources>
