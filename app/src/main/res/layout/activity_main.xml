@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/layout_container"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:clanner="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".activity.MainActivity">
 
-</RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout style="@style/LinearLayout_Bottom">
+
+        <clanner.app.V.view.BottomView
+            android:id="@+id/bottom_highlight"
+            style="@style/Bottom_style"
+            clanner:bottom_icon="@mipmap/test_1"
+            clanner:bottom_text="@string/bottom_highlight_value"/>
+
+        <clanner.app.V.view.BottomView
+            android:id="@+id/bottom_publish"
+            style="@style/Bottom_style"
+            clanner:bottom_text="@string/bottom_publish_value"
+            clanner:bottom_icon="@mipmap/test_2"/>
+
+        <clanner.app.V.view.BottomView
+            android:id="@+id/bottom_me"
+            style="@style/Bottom_style"
+            clanner:bottom_text="@string/bottom_me_value"
+            clanner:bottom_icon="@mipmap/test_3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

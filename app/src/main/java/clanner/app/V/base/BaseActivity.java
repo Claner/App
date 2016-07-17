@@ -33,6 +33,7 @@ public abstract class BaseActivity extends SwipeBackActivity{
     /**
      * 初始化 ToolBar
      */
+
     protected void initActionBar(Toolbar toolbar, String title, boolean isCanBack){
         toolbar.setNavigationIcon(R.mipmap.ic_back_white);
         setSupportActionBar(toolbar);

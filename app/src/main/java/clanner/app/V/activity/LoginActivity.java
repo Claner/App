@@ -1,5 +1,6 @@
 package clanner.app.V.activity;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +9,7 @@ import android.widget.EditText;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import clanner.app.M.UrlTools;
 import clanner.app.P.LoginPresenter;
 import clanner.app.V.R;
 import clanner.app.V.base.BaseActivity;
@@ -27,7 +29,7 @@ public class LoginActivity extends BaseActivity implements LoginView {
     EditText edtPasswordLogin;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-
+    private ProgressDialog progressDialog;
 
     private LoginPresenter loginPresenter;
     private String account;
@@ -79,20 +81,30 @@ public class LoginActivity extends BaseActivity implements LoginView {
     }
 
     @Override
+    public void showProgress() {
+        progressDialog = ProgressDialog.show(this, null, "正在登陆...");
+    }
+
+    @Override
+    public void hideProgress() {
+        progressDialog.dismiss();
+    }
+
+    @Override
     public void loginSuccess() {
-        ChangeActivity(MainActivity.class,true);
+        ChangeActivity(MainActivity.class, true);
     }
 
     @Override
     public void loginFailure(int errorCode) {
         switch (errorCode) {
-            case 1:
+            case UrlTools.ERRORCODE_CONTENT_EMPTY:
                 toast("用户民和密码不能为空");
                 break;
-            case 2:
+            case UrlTools.ERRORCODE_CONTENT_WRONG:
                 toast("用户名或密码错误");
                 break;
-            case 3:
+            case UrlTools.ERRORCODE_REQUEST_FAILURE:
                 toast("请求失败,请检查网络连接");
                 break;
         }

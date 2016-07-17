@@ -1,6 +1,6 @@
 package clanner.app.P;
 
-import clanner.app.M.entity.LoginModel;
+import clanner.app.M.LoginModel;
 import clanner.app.V.view.Interface.LoginView;
 
 /**
@@ -16,15 +16,18 @@ public class LoginPresenter {
     }
 
     public void login(String account,String password){
+        loginView.showProgress();
         loginModel.login(account,password);
     }
 
     public void loginSuccess(){
         loginView.loginSuccess();
+        loginView.hideProgress();
     }
 
-    public void loginFailue(int errorCode){
+    public void loginFailure(int errorCode){
         loginView.loginFailure(errorCode);
+        loginView.hideProgress();
     }
 
     public void detachView(){
