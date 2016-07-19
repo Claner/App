@@ -34,7 +34,7 @@ public class MeAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-            return fragments.size();
+        return fragments.size();
     }
 
     @Override

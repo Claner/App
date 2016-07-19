@@ -142,7 +142,7 @@ public class BottomView extends View {
         textPaint.setColor(0xff333333);
         textPaint.setAlpha(255 - alpha);
         int x = getMeasuredWidth() / 2 - textBound.width() / 2;
-        int y = iconBound.bottom + textBound.height();
+        int y = iconBound.bottom + textBound.height()/2;
         canvas.drawText(bottomText, x, y, textPaint);
     }
 
@@ -156,7 +156,7 @@ public class BottomView extends View {
         textPaint.setColor(bottomColor);
         textPaint.setAlpha(alpha);
         int x = getMeasuredWidth() / 2 - textBound.width() / 2;
-        int y = iconBound.bottom + textBound.height();
+        int y = iconBound.bottom + textBound.height()/2;
         canvas.drawText(bottomText, x, y, textPaint);
     }
 

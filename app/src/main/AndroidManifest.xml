@@ -23,6 +23,10 @@
             android:name=".activity.RegisterActivity"
             android:theme="@style/MyTheme">
         </activity>
+        <activity
+            android:theme="@style/MyTheme"
+            android:name=".activity.PublishActivity">
+        </activity>
     </application>
 
 </manifest>

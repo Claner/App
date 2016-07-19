@@ -1,8 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="@color/btn_publish_color"
+              android:orientation="vertical">
+
     <include layout="@layout/toolbar"/>
+
+    <LinearLayout style="@style/LinearLayout_Horizontal">
+
+        <Button
+            android:id="@+id/btn_custom"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_custom_value"/>
+
+        <Button
+            android:id="@+id/btn_party"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_party_value"/>
+
+        <Button
+            android:id="@+id/btn_board_game"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_board_game"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout_Horizontal">
+
+        <Button
+            android:id="@+id/btn_escape_game"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_escape_game_value"/>
+
+        <Button
+            android:id="@+id/btn_sport"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_sport_value"/>
+
+        <Button
+            android:id="@+id/btn_film"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_film_value"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout_Horizontal">
+
+        <Button
+            android:id="@+id/btn_eating"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_eating_value"/>
+
+        <Button
+            android:id="@+id/btn_study"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_study_value"/>
+
+        <Button
+            android:id="@+id/btn_history"
+            style="@style/Button_publish"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/btn_history_value"/>
+    </LinearLayout>
 
 </LinearLayout>

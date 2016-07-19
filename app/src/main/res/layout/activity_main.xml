@@ -30,7 +30,7 @@
             android:id="@+id/bottom_publish"
             style="@style/Bottom_style"
             clanner:bottom_text="@string/bottom_publish_value"
-            clanner:bottom_icon="@mipmap/test_2"/>
+            clanner:bottom_icon="@mipmap/publish"/>
 
         <clanner.app.V.view.BottomView
             android:id="@+id/bottom_me"

@@ -10,6 +10,7 @@
     <!--0xFF45C01A-->
     <color name="bottom_color">#6f6f6f</color>
     <color name="toolbar_color">#848484</color>
+    <color name="btn_publish_color">#dedbdb</color>
     <!--回复列表-->
     <color name="main_color">#82bb22</color>
     <color name="light_color">#ffc8eac9</color>

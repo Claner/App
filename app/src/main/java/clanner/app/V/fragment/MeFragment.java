@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.astuetz.PagerSlidingTabStrip;
@@ -30,6 +31,8 @@ public class MeFragment extends BaseFragment {
     TextView toolbarTitle;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
+    @BindView(R.id.image_right)
+    ImageView imageRight;
 
     private List<Fragment> fragments = new ArrayList<Fragment>();
     private FragmentPagerAdapter adapter;
@@ -52,8 +55,9 @@ public class MeFragment extends BaseFragment {
     }
 
     private void setActionBar() {
-        initActionBar(toolbar,"");
+        initActionBar(toolbar, "");
         toolbarTitle.setText(R.string.bottom_me_value);
+        imageRight.setImageResource(R.mipmap.icon_setting);
     }
 
     private void initFragment() {

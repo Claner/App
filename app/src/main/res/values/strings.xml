@@ -17,6 +17,16 @@
     <string name="bottom_highlight_value">精彩活动</string>
     <string name="bottom_publish_value">发布活动</string>
     <string name="bottom_me_value">个人中心</string>
+    <!--发布活动-->
+    <string name="btn_custom_value">自定义</string>
+    <string name="btn_party_value">节日派对</string>
+    <string name="btn_board_game">桌游</string>
+    <string name="btn_escape_game_value">密室逃脱</string>
+    <string name="btn_sport_value">运动</string>
+    <string name="btn_film_value">电影</string>
+    <string name="btn_eating_value">聚餐</string>
+    <string name="btn_study_value">学习</string>
+    <string name="btn_history_value">历史纪录</string>
     <!--个人中心-->
     <string-array name="me_titles">
         <item>我发起的</item>

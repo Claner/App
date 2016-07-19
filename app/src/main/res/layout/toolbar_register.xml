@@ -14,8 +14,8 @@
         style="@style/TextView_Toolbar"
         android:layout_gravity="center"/>
 
-    <ImageView
-        android:id="@+id/image_right"
-        style="@style/ImageView_Toolbar"/>
-
+    <TextView
+        android:id="@+id/toolbar_right"
+        style="@style/TextView_Toolbar"
+        android:layout_gravity="end"/>
 </android.support.v7.widget.Toolbar>
