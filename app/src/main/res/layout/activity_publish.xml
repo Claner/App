@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_text"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/edt_publish_content"
+        style="@style/EditText"
+        android:textSize="32sp"/>
+
+    <!--活动时间-->
+    <ListView
+        android:id="@+id/listView_time"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"></ListView>
+    <!--活动地点-->
+    <ListView
+        android:id="@+id/listView_location"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"></ListView>
+    <!--活动详情-->
+    <EditText
+        android:id="@+id/edt_details"
+        android:hint="@string/edt_details_value"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -27,6 +27,7 @@
     <string name="btn_eating_value">聚餐</string>
     <string name="btn_study_value">学习</string>
     <string name="btn_history_value">历史纪录</string>
+    <string name="edt_details_value">活动详情</string>
     <!--个人中心-->
     <string-array name="me_titles">
         <item>我发起的</item>

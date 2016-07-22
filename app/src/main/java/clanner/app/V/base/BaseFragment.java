@@ -1,5 +1,6 @@
 package clanner.app.V.base;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
@@ -113,5 +114,9 @@ public abstract class BaseFragment extends Fragment {
                 Toast.makeText(getActivity(), content, Toast.LENGTH_LONG).show();
             }
         }
+    }
+
+    protected void changeActivity(Intent intent){
+        getActivity().startActivity(intent);
     }
 }

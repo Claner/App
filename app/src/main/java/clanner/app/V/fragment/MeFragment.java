@@ -1,5 +1,6 @@
 package clanner.app.V.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -15,8 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 import clanner.app.V.Adapter.MeAdapter;
 import clanner.app.V.R;
+import clanner.app.V.activity.SettingActivity;
 import clanner.app.V.base.BaseFragment;
 
 /**
@@ -70,5 +73,11 @@ public class MeFragment extends BaseFragment {
     private void initViewPager() {
         meViewpager.setAdapter(adapter);
         tabs.setViewPager(meViewpager);
+    }
+
+    @OnClick(R.id.image_right)
+    public void onClick() {
+        Intent intent = new Intent(getActivity(), SettingActivity.class);
+        changeActivity(intent);
     }
 }

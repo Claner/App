@@ -4,7 +4,7 @@
                 android:layout_height="match_parent"
                 android:background="@mipmap/register_bg">
 
-    <include layout="@layout/toolbar_register"/>
+    <include layout="@layout/toolbar_text"/>
 
     <LinearLayout
         android:layout_width="match_parent"

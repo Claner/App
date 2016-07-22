@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout_Vertical">
+    <!--想好界面就来写-->
+        <TextView
+            android:text="主题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <LinearLayout style="@style/LinearLayout_Horizontal">
+        <TextView style="@style/TextView"
+            android:text="分享时间"/>
+        <TextView style="@style/TextView"
+                  android:layout_marginLeft="100dp"
+            android:text="评论数"/>
+    </LinearLayout>
+
+</LinearLayout>

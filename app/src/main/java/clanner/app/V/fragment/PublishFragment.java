@@ -10,7 +10,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 import clanner.app.M.entity.PublishEntity;
 import clanner.app.V.R;
-import clanner.app.V.activity.PublishActivity;
+import clanner.app.V.activity.PublishDetailsActivity;
 import clanner.app.V.base.BaseFragment;
 
 /**
@@ -46,38 +46,95 @@ public class PublishFragment extends BaseFragment {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_custom:
-                changeActivity(PublishEntity.FRAGMENT_CUSTOM);
+                custom();
                 break;
             case R.id.btn_party:
-                changeActivity(PublishEntity.FRAGMENT_PATY);
+                party();
                 break;
             case R.id.btn_board_game:
-                changeActivity(PublishEntity.FRAGMENT_BOARD_GAME);
+                board_game();
                 break;
             case R.id.btn_escape_game:
-                changeActivity(PublishEntity.FRAGMENT_ESCAPE_GAME);
+                escape_game();
                 break;
             case R.id.btn_sport:
-                changeActivity(PublishEntity.FRAGMENT_SPORT);
+                sport();
                 break;
             case R.id.btn_film:
-                changeActivity(PublishEntity.FRAGMENT_FILM);
+                film();
                 break;
             case R.id.btn_eating:
-                changeActivity(PublishEntity.FRAGMENT_EATING);
+                eating();
                 break;
             case R.id.btn_study:
-                changeActivity(PublishEntity.FRAGMENT_STUDY);
+                study();
                 break;
             case R.id.btn_history:
-                changeActivity(PublishEntity.FRAGMENT_HISTORY);
+                history();
                 break;
         }
     }
 
-    private void changeActivity(int fragmentCode){
-        Intent intent = new Intent(getActivity(), PublishActivity.class);
-        intent.putExtra("fragmentCode", fragmentCode);
-        getActivity().startActivity(intent);
+    private void custom(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_CUSTOM);
+        intent.putExtra("STRING","自定义");
+        changeActivity(intent);
+    }
+
+    private void party(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_PARTY);
+        intent.putExtra("STRING","节日派对");
+        changeActivity(intent);
+    }
+
+    private void board_game(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_BOARD_GAME);
+        intent.putExtra("STRING","桌游");
+        changeActivity(intent);
+    }
+
+    private void escape_game(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_ESCAPE_GAME);
+        intent.putExtra("STRING","密室逃脱");
+        changeActivity(intent);
+    }
+
+    private void sport(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_SPORT);
+        intent.putExtra("STRING","运动");
+        changeActivity(intent);
+    }
+
+    private void film(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_FILM);
+        intent.putExtra("STRING","电影");
+        changeActivity(intent);
+    }
+
+    private void eating(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_EATING);
+        intent.putExtra("STRING","聚餐");
+        changeActivity(intent);
+    }
+
+    private void study(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_STUDY);
+        intent.putExtra("STRING","学习");
+        changeActivity(intent);
+    }
+
+    private void history(){
+        Intent intent = new Intent(getActivity(), PublishDetailsActivity.class);
+        intent.putExtra("CODE", PublishEntity.ACTIVITY_HISTORY);
+        intent.putExtra("STRING","历史纪录");
+        changeActivity(intent);
     }
 }

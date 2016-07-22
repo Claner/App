@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/LinearLayout_Vertical"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout style="@style/LinearLayout_Horizontal">
+
+        <TextView
+            android:id="@+id/tv_theme"
+            android:text="主题"
+            style="@style/TextView"/>
+
+        <TextView
+            android:text="开始时间"
+            android:id="@+id/tc_start_time"
+            style="@style/TextView"/>
+
+        <TextView
+            android:text="结束时间"
+            android:id="@+id/tv_end_time"
+            style="@style/TextView"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/TextView"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_highlight_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_highlight_details"
+        android:text="活动详情"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_highlight_feelings"
+        android:text="活动感受"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView style="@style/TextView"
+        android:text="发布人"/>
+
+    <TextView style="@style/TextView"
+              android:text="发布时间"/>
+
+    <!--评论列表-->
+
+</LinearLayout>

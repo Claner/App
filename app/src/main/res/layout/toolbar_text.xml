@@ -17,5 +17,6 @@
     <TextView
         android:id="@+id/toolbar_right"
         style="@style/TextView_Toolbar"
-        android:layout_gravity="end"/>
+        android:layout_gravity="end"
+        android:layout_marginRight="7dp"/>
 </android.support.v7.widget.Toolbar>
